@@ -1,0 +1,44 @@
+.layout {
+  display: flex;
+}
+
+.profile-picture {
+  background-color: transparent;
+}
+
+nav {
+  background: rgb(0, 0, 78);
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100vh;
+  justify-items: center;
+
+  img {
+    width: 66%;
+    margin: 0 auto;
+  }
+
+  .links {
+    margin: auto 0;
+  }
+  a {
+    font-size: large;
+    display: block;
+    background: gray;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 0;
+  }
+
+  .social-links {
+    display: flex;
+    margin: 0 auto;
+    a {
+      background: transparent;
+      padding: 0.3rem 0.3rem;
+    }
+
+  }
+
+}

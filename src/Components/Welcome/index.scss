@@ -1,0 +1,12 @@
+.home-page {
+  display: flex;
+  color: white;
+  background: gray;
+  grid-column: 1/4;
+  grid-row: 1/6;
+  align-self: center;
+}
+
+h1 {
+  margin: 0 0.5rem;
+}
