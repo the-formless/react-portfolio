@@ -8,11 +8,20 @@ body {
 
 
 .app-content {
-  display: grid;
+  display: flex;
   width: 100vw;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   background: olive;
   justify-self: stretch;
   align-self: stretch;
+  align-items: center;
+}
+
+.transition-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.transition-enter.transition-enter-active {
+  opacity: 1;
+  transition: ease-in;
 }

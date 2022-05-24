@@ -1,17 +1,22 @@
 .project{
   display: flex;
   flex-direction: column;
-  border: 3px solid white;
+  background: rgb(192, 172, 172);
+  border-radius: 1.1rem;
   padding: 1rem 1rem;
-  max-width: 333px;
+  max-width: 250px;
   margin: 0 1rem;
   img {
     max-width: 77%;
     margin: 0 auto;
   }
+  p{
+    text-align: justify;
+  }
   .technologies {
     display: flex;
     margin: 0 auto;
+    margin-top: auto;
     .technology {
       display: flex;
       flex-direction: column;
@@ -19,6 +24,7 @@
       font-size: small;
       p{
         font-size: small;
+        text-align: center;
       }
     }
   }
@@ -35,4 +41,9 @@
       background: rgb(65, 64, 64);
     }
   }
+}
+
+.projects {
+  display: flex;
+  align-self: center;
 }

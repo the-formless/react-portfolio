@@ -1,4 +1,5 @@
 import chessImg from './assets/chess_project.png'
+import ultimateTTT from './assets/ultiTTT.png'
 import {FaReact, FaUnity, FaHtml5, FaCss3, FaJs, FaSass} from 'react-icons/fa'
 import {SiCsharp, SiFirebase} from 'react-icons/si'
 
@@ -45,4 +46,14 @@ const tech = {
     description: 'An online chess app built with chess.js API, allows user to play locally as well as realtime with friends.',
     technologies: [tech.react, tech.firebase, tech.js, tech.css],
     blog: '' 
-  }];
+  },
+  {
+    title: 'Ultimate Tic Tac Toe',
+    img: ultimateTTT,
+    link: 'https://the-formless.github.io/ultimate-tic-tac-toe/',
+    github: 'https://github.com/the-formless/ultimate-tic-tac-toe',
+    description: 'A 2-player strategy game of multi-dimensional Tic Tac Toe. Check the demo video on Github by clicking View Code',
+    technologies: [tech.react,  tech.js, tech.html,tech.css],
+    blog: '' 
+  },
+];
