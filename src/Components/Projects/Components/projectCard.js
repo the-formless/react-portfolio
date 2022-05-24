@@ -1,8 +1,26 @@
 import React from 'react'
+import {BsGithub, BsLinkedin} from 'react-icons/bs'
 
-function ProjectCard() {
+function ProjectCard({valObj}) {
   return (
-    <div>ProjectCard</div>
+    <div className='project'>
+      <h4>{valObj.title}</h4>
+      <img src={valObj.img} alt={valObj.title} />
+      <p>{valObj.description}</p>
+      <div className='technologies'>
+        {valObj.technologies.map((v, i)=> 
+          <div className='technology' key={i}>
+            <h1>{v.icon}</h1>
+            <p>{v.text}</p>
+          </div>
+        )}
+      </div>
+      <div className='project-links'>
+          {valObj.link && <a href={valObj.link} target='_blank'>View Live</a>}
+          {valObj.github && <a href={valObj.github} target='_blank'>View Code</a>}
+          {valObj.blog && <a href={valObj.blog} target='_blank'>View Blog</a>}
+      </div>
+    </div>
   )
 }
 
