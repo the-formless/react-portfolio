@@ -1,11 +1,13 @@
 import React from 'react'
+import Images from './imagesContainer'
 import {BsGithub, BsLinkedin} from 'react-icons/bs'
 
 function ProjectCard({valObj}) {
   return (
     <div className='project'>
       <h4>{valObj.title}</h4>
-      <img src={valObj.img} alt={valObj.title} />
+      {/* <img src={valObj.img} alt={valObj.title} /> */}
+      <Images images={valObj.images} projectName={valObj.title}/>
       <p>{valObj.description}</p>
       <div className='technologies'>
         {valObj.technologies.map((v, i)=> 

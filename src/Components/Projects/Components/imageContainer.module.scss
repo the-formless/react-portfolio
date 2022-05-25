@@ -1,0 +1,57 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px solid brown;
+  box-sizing: border-box;
+}
+
+.image {
+  position: relative;
+  bottom: -1.1rem;
+  margin: auto;
+  animation-name: enter;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes enter {
+  0%{ opacity: 0;}
+  50%{ opacity: 0.5;}
+  100%{ opacity: 1;}
+}
+.image-buttons{
+  display: flex;
+  margin: auto auto 0 auto;
+}
+
+.sliderBtns{
+  display: flex;
+}
+.prev {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(-5rem);
+  border-radius: 50%;
+  background: rgba(128, 128, 128, 0.534);
+}
+.next {
+  left: 11.33rem;
+}
+
+.radio {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border-radius: 50%;
+  margin: 0 0.11rem 0 0.11rem;
+  
+}
+.radio.active{
+  box-sizing: border-box;
+  border: 0.22rem solid white;
+  background: brown;
+}

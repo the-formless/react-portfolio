@@ -46,7 +46,7 @@ const tech = {
 
  export const projects = [{
   title: 'React Portfolio',
-  img: "",
+  images: ["any"],
   link: '',
   github: 'https://github.com/the-formless/react-portfolio',
   description: 'A SPA built entirely in React. You\'re looking at it right now. Use of good project structure and components. Styling with SASS.',
@@ -55,7 +55,7 @@ const tech = {
   },
   {
     title: 'Realtime Multiplayer Chess',
-    img: chessImg,
+    images: [chessImg],
     link: 'https://moonlit-fox-037c4a.netlify.app/',
     github: 'https://github.com/the-formless/chess-in-react',
     description: 'An online chess app built with chess.js API, allows user to play locally as well as realtime with friends.',
@@ -64,7 +64,7 @@ const tech = {
   },
   {
     title: 'Ultimate Tic Tac Toe',
-    img: ultimateTTT,
+    images: [ultimateTTT],
     link: 'https://the-formless.github.io/ultimate-tic-tac-toe/',
     github: 'https://github.com/the-formless/ultimate-tic-tac-toe',
     description: 'A 2-player strategy game of multi-dimensional Tic Tac Toe. Check the demo video on Github by clicking View Code.',
@@ -73,7 +73,7 @@ const tech = {
   },
   {
     title: 'Airlift (Mobile Game)',
-    img: [airlift1, airlift2, airlift3],
+    images: [airlift1, airlift2, airlift3],
     link: 'https://ticklinggenre.itch.io/airlift',
     github: '',
     description: 'A Mobile game developed with Unity Game Engine and C#. Implements Google Play API to manage in-game achievements and global player leaderboard.',
@@ -82,7 +82,7 @@ const tech = {
   },
   {
     title: '2D Star System Simulator',
-    img: _2dstar,
+    images: [_2dstar],
     link: '',
     github: 'https://github.com/the-formless/2d-star-system-sim',
     description: 'A desktop app developed with Unity Game Engine and C#. Implements OOP and State-Pattern. Read the blog to get an insight into how I approach problems.',
