@@ -1,25 +1,22 @@
+$color1: #17252a;
+$color2: #2b7a78;
+$color3: #3aafa9;
+$color4: #def2f1;
+$color5: #feffff;
+
 .image-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   aspect-ratio: 1;
-  border: 2px solid brown;
   box-sizing: border-box;
 }
 
 .image {
-  position: relative;
-  bottom: -1.1rem;
+  //position: relative;
+  //bottom: -1.1rem;
   margin: auto;
-  animation-name: enter;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-@keyframes enter {
-  0%{ opacity: 0;}
-  50%{ opacity: 0.5;}
-  100%{ opacity: 1;}
+  box-shadow: 0 0 3px 3px $color3;
 }
 .image-buttons{
   display: flex;
@@ -31,27 +28,36 @@
 }
 .prev {
   position: relative;
-  width: 2rem;
-  height: 2rem;
-  transform: translateY(-5rem);
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateY(-8rem);
+  left: -1%;
   border-radius: 50%;
-  background: rgba(128, 128, 128, 0.534);
+  border: 0rem solid $color4;
+  color: $color5;
+  background: #3aafa981;
+  box-sizing: border-box;
+  transition-property: border;
+  transition-duration: 0.3s;
 }
 .next {
-  left: 11.33rem;
+  left: 72%;
+}
+.prev:hover{
+  border: 0.22rem solid $color2;
 }
 
 .radio {
   position: relative;
   width: 1rem;
   height: 1rem;
-  background: white;
+  background: $color3;
   border-radius: 50%;
   margin: 0 0.11rem 0 0.11rem;
   
 }
 .radio.active{
   box-sizing: border-box;
-  border: 0.22rem solid white;
-  background: brown;
+  border: 0.22rem solid $color3;
+  background: $color4;
 }

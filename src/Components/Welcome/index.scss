@@ -1,7 +1,13 @@
+$color1: #17252a;
+$color2: #2b7a78;
+$color3: #3aafa9;
+$color4: #def2f1;
+$color5: #feffff;
+
 .home-page {
   display: flex;
-  color: white;
-  background: gray;
+  color: $color5;
+  background: $color3;
   grid-column: 1/4;
   grid-row: 1/6;
   align-self: center;

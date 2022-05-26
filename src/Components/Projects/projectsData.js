@@ -1,7 +1,14 @@
 //contains data for my projects
 
-import chessImg from './assets/chess_project.png'
-import ultimateTTT from './assets/ultiTTT.png'
+import chess0 from './assets/chess_project.png'
+import chess1 from './assets/chess1.png'
+import chess2 from './assets/chess2.png'
+import chess3 from './assets/chess3.png'
+import utt1 from './assets/utt1.png'
+import utt2 from './assets/utt2.png'
+import utt3 from './assets/ultiTTT.png'
+import utt4 from './assets/utt4.png'
+import utt5 from './assets/utt5.png'
 import airlift1 from './assets/airlift1.png'
 import airlift2 from './assets/airlift2.png'
 import airlift3 from './assets/airlift3.png'
@@ -55,7 +62,7 @@ const tech = {
   },
   {
     title: 'Realtime Multiplayer Chess',
-    images: [chessImg],
+    images: [chess0, chess2, chess1, chess3],
     link: 'https://moonlit-fox-037c4a.netlify.app/',
     github: 'https://github.com/the-formless/chess-in-react',
     description: 'An online chess app built with chess.js API, allows user to play locally as well as realtime with friends.',
@@ -64,7 +71,7 @@ const tech = {
   },
   {
     title: 'Ultimate Tic Tac Toe',
-    images: [ultimateTTT],
+    images: [utt1, utt2, utt3, utt4, utt5],
     link: 'https://the-formless.github.io/ultimate-tic-tac-toe/',
     github: 'https://github.com/the-formless/ultimate-tic-tac-toe',
     description: 'A 2-player strategy game of multi-dimensional Tic Tac Toe. Check the demo video on Github by clicking View Code.',

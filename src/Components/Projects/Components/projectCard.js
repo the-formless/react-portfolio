@@ -5,10 +5,10 @@ import {BsGithub, BsLinkedin} from 'react-icons/bs'
 function ProjectCard({valObj}) {
   return (
     <div className='project'>
-      <h4>{valObj.title}</h4>
+      <h3>{valObj.title}</h3>
       {/* <img src={valObj.img} alt={valObj.title} /> */}
       <Images images={valObj.images} projectName={valObj.title}/>
-      <p>{valObj.description}</p>
+      <p className='description'>{valObj.description}</p>
       <div className='technologies'>
         {valObj.technologies.map((v, i)=> 
           <div className='technology' key={i}>

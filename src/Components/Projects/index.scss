@@ -1,30 +1,49 @@
+$color1: #17252a;
+$color2: #2b7a78;
+$color3: #3aafa9;
+$color4: #def2f1;
+$color5: #feffff;
+
 .project{
   display: flex;
   flex-direction: column;
-  background: rgb(192, 172, 172);
+  background: $color4;
+  color: $color1;
+  border: 0rem solid $color1;
   border-radius: 1.1rem;
   padding: 1rem 1rem;
-  max-width: 250px;
-  min-width: 250px;
+  max-width: 333px;
+  min-width: 275px;
   margin: 0 1rem;
+  box-shadow: 0px 0px 3px 3px $color3;
+  transition-property: border, padding, box-shadow;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+
   img {
-    max-width: 77%;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
+    background: #7687b43b;
   }
+
   p{
     text-align: justify;
+    margin-top: auto;
   }
   .technologies {
     display: flex;
     margin: 0 auto;
     margin-top: auto;
+    font-size: medium;
+    color: #2b7a78;
     .technology {
       display: flex;
       flex-direction: column;
       padding: 0 0.33rem;
-      font-size: small;
+      font-size: medium;
       p{
-        font-size: small;
+        font-size: medium;
         text-align: center;
       }
     }
@@ -32,20 +51,50 @@
   .project-links {
     a {
       text-decoration: none;
-      color: white;
-      margin: 0 0.3rem;
-      padding: 0.3rem 1rem;
-      background: gray;
+      color: $color4;
+      margin: 0.3rem 0.3rem 0 0.3rem;
+      padding: 0.6rem 1rem;
+      background: $color3;
       border-radius: 1rem;
+      font-size: large;
     }
     a:hover {
-      background: rgb(65, 64, 64);
+      background: $color1;
+      color: $color5;
     }
   }
 }
-
+.project:hover {
+  border: 0.33rem solid $color1;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 0px 0px 12px 12px #def2f1a6;
+}
 .projects {
   display: flex;
   min-width: min-content;
   align-self: center;
+  animation-name: enter;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes enter {
+  0%{ opacity: 0;}
+  50%{ opacity: 0.5;}
+  100%{ opacity: 1;}
+}
+
+
+.description {
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .projects{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project {
+    margin: 1rem auto;
+  }
 }

@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+$color1: #17252a;
+$color2: #2b7a78;
+$color3: #3aafa9;
+$color4: #def2f1;
+$color5: #feffff;
+
 body {
   margin: 0;
   font-family: 'Comfortaa', 'Monospace';
-  background: #423b6d;
+  background: $color3;
 }
 
 
@@ -12,12 +18,18 @@ body {
   display: flex;
   overflow: auto;
   min-width: 100vh;
-  background: olive;
+  background: $color3;
   justify-self: stretch;
   align-self: stretch;
   align-items: center;
 }
-
+ @media (max-width: 768px){
+   .app-content{
+     flex-direction: column;
+     min-width: fit-content;
+     align-items: center;
+   }
+ }
 .transition-enter {
   opacity: 0;
   z-index: 1;
