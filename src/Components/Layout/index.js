@@ -10,7 +10,7 @@ function Layout(props) {
     <div className='layout'>
       <nav>
         
-        <Link to={'/'} className='profile-picture'><img src={pic} alt="Vandit's Profile Picture" /></Link>
+        <Link to={'/'} className='profile-picture'><img src={pic} alt="Vandit Narain Tyagi" /></Link>
         <div className='links'>
           <Link to={'/projects'} className={(location.pathname === '/projects')? 'a-active' : ''}>Projects</Link>
           <Link to={'/skills'} className={(location.pathname === '/skills')? 'a-active' : ''}>Skills</Link>
@@ -18,8 +18,8 @@ function Layout(props) {
           <Link to={'/contact'} className={(location.pathname === '/contact')? 'a-active' : ''}>Contact</Link>
         </div>
         <div className='social-links'>
-          <a href='https://github.com/the-formless' target='_blank'><BsGithub /></a>
-          <a href='https://www.linkedin.com/in/vandit-narain/' target='_blank'><BsLinkedin /></a>
+          <a href='https://github.com/the-formless' target='_blank' rel="noreferrer"><BsGithub /></a>
+          <a href='https://www.linkedin.com/in/vandit-narain/' target='_blank' rel="noreferrer"><BsLinkedin /></a>
         </div>
       </nav>
       <div className='app-content'>

@@ -38,7 +38,7 @@ function Images({images, projectName}) {
       {images.length > 1 && 
       <div className={carouselStyles['image-buttons']}>
         {images.map((v, i) => 
-          <div className={(v===image)? activeClass : radioClass} onClick={() => setImage(v)}></div>
+          <div key={i} className={(v===image)? activeClass : radioClass} onClick={() => setImage(v)}></div>
         )}
       </div>}
     </div>

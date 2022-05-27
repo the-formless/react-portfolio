@@ -7,16 +7,15 @@ $color5: #d2fdff;
 .image-container {
   display: flex;
   flex-direction: column;
-  width: 333px;
-  height: 333px;
+  width: 100%;
+  height: auto;
+  text-align: center;
   box-sizing: border-box;
 }
 
 .image {
   //position: relative;
   //bottom: -1.1rem;
-  margin: auto;
-  max-width: 100%;
   height: auto;
 }
 .image-buttons{

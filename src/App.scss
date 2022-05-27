@@ -4,9 +4,27 @@ $color3: #99ced3;
 $color4: #b4dfe5;
 $color5: #d2fdff;
 
-.App {
+.App{
   text-align: center;
 }
+// .App{
+//   flex: 1;
+//   text-align: center;
+//   display: flex;
+//   overflow: auto;
+//   min-width: 100vh;
+//   background: #d2fdff;
+//   justify-self: stretch;
+//   align-self: stretch;
+//   align-items: center;
+// }
+//  @media (max-width: 768px){
+//    .App{
+//      flex-direction: column;
+//      min-width: fit-content;
+//      align-items: center;
+//    }
+//  }
 
 
 .active-page{

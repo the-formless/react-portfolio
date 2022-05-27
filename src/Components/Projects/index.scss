@@ -4,6 +4,11 @@ $color3: #99ced3;
 $color4: #b4dfe5;
 $color5: #d2fdff;
 
+.project:hover {
+  border: 0.22rem solid $color1;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+}
 .project{
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -13,13 +18,14 @@ $color5: #d2fdff;
   border: 0rem solid $color1;
   border-radius: 0;
   padding: 1rem 1rem;
-  max-width: 333px;
-  min-width: 275px;
+  max-width: 444px;
+  min-width: 350px;
   margin: 0 1rem;
-  box-shadow: 0px 0px 0 0 $color2;
-  transition-property: border, padding, box-shadow;
+  margin-bottom: 0;
+  transition-property: border, margin-bottom, margin-top;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
+  box-sizing: border-box;
 
   img {
     max-width: 100%;
@@ -31,7 +37,7 @@ $color5: #d2fdff;
   p{
     text-align: justify;
     margin-top: 2rem;
-    font-size: larger;
+    font-size: medium;
   }
   .technologies {
     display: flex;
@@ -66,11 +72,6 @@ $color5: #d2fdff;
       color: $color5;
     }
   }
-}
-.project:hover {
-  border: 0.33rem solid $color1;
-  padding: 1.5rem 1.5rem;
-  box-shadow: 0px 0px 5px 5px $color2;
 }
 .projects {
   display: flex;

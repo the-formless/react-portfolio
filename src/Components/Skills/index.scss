@@ -1,0 +1,46 @@
+.skills-page {
+  display: grid;
+  width: 72vw;
+  max-height: 88vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.skill {
+  img{
+    max-width: 200px;
+    max-height: 200px;
+  }
+  img:hover{
+    animation-name: hovering;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  @keyframes hovering{
+    0%{
+      max-width: 200px;
+      max-height: 200px;
+    }
+    50%{
+      max-width: 175px;
+      max-height: 175px;
+    }
+    100%{
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .skills-page {
+    grid-template-columns: 1fr 1fr;
+  }
+  .skill{
+    img{
+      max-width: 125px;
+      max-height: 125px;
+    }
+  }
+}
