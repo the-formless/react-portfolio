@@ -5,7 +5,7 @@ import {BsGithub, BsLinkedin} from 'react-icons/bs'
 function ProjectCard({valObj}) {
   return (
     <div className='project'>
-      <h3>{valObj.title}</h3>
+      <h2>{valObj.title}</h2>
       {/* <img src={valObj.img} alt={valObj.title} /> */}
       <Images images={valObj.images} projectName={valObj.title}/>
       <p className='description'>{valObj.description}</p>

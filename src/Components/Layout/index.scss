@@ -1,8 +1,8 @@
 $color1: #17252a;
-$color2: #2b7a78;
-$color3: #3aafa9;
-$color4: #def2f1;
-$color5: #feffff;
+$color2: #5f6366;
+$color3: #99ced3;
+$color4: #b4dfe5;
+$color5: #d2fdff;
 
 .layout {
   display: flex;
@@ -10,6 +10,9 @@ $color5: #feffff;
 }
 
 .profile-picture {
+  background-color: transparent;
+}
+.profile-picture:hover {
   background-color: transparent;
 }
 
@@ -20,7 +23,8 @@ nav {
   width: 25%;
   height: 100vh;
   justify-items: center;
-  color: $color5;
+  color: $color2;
+  text-align: center;
 
   img {
     width: 66%;
@@ -31,20 +35,28 @@ nav {
     margin: auto 0;
   }
   a {
-    font-size: large;
+    font-size: 2rem;
     display: block;
-    background: $color2;
-    color: $color5;
+    background: $color4;
+    color: $color1;
     text-decoration: none;
     padding: 0.7rem 0;
   }
-
+  a:hover {
+    background: $color5;
+  }
+  .a-active {
+    background: $color3;
+  }
   .social-links {
     display: flex;
     margin: 0 auto;
     a {
+      font-size: 2rem;
+      color: $color5;
       background: transparent;
       padding: 0.3rem 0.3rem;
+      margin: 0 0.33rem;
     }
 
   }

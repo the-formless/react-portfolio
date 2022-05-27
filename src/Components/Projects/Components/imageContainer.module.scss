@@ -1,14 +1,14 @@
 $color1: #17252a;
-$color2: #2b7a78;
-$color3: #3aafa9;
-$color4: #def2f1;
-$color5: #feffff;
+$color2: #5f6366;
+$color3: #99ced3;
+$color4: #b4dfe5;
+$color5: #d2fdff;
 
 .image-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  aspect-ratio: 1;
+  width: 333px;
+  height: 333px;
   box-sizing: border-box;
 }
 
@@ -16,11 +16,12 @@ $color5: #feffff;
   //position: relative;
   //bottom: -1.1rem;
   margin: auto;
-  box-shadow: 0 0 1rem 0.11rem $color3;
+  max-width: 100%;
+  height: auto;
 }
 .image-buttons{
   display: flex;
-  margin: auto auto 0 auto;
+  margin: auto;
 }
 
 .sliderBtns{
@@ -30,34 +31,37 @@ $color5: #feffff;
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  transform: translateY(-8rem);
+  transform: translateY(-10rem);
   left: -1%;
   border-radius: 50%;
   border: 0rem solid $color4;
   color: $color5;
-  background: #3aafa981;
+  background: #b4dfe57c;
   box-sizing: border-box;
-  transition-property: border;
-  transition-duration: 0.3s;
+  transition-property: border, color;
+  transition-duration: 0.1s;
 }
 .next {
-  left: 72%;
+  left: 75%;
 }
 .prev:hover{
   border: 0.22rem solid $color2;
+  color: $color2;
 }
 
 .radio {
   position: relative;
   width: 1rem;
   height: 1rem;
-  background: $color3;
+  background: $color5;
   border-radius: 50%;
   margin: 0 0.11rem 0 0.11rem;
-  
+  box-sizing: border-box;
 }
 .radio.active{
-  box-sizing: border-box;
-  border: 0.22rem solid $color3;
-  background: $color4;
+  border: 0.22rem solid $color5;
+  background: $color2;
+}
+.radio:hover {
+  border: 0.11rem solid $color2;
 }

@@ -1,11 +1,16 @@
-
 $color1: #17252a;
-$color2: #2b7a78;
-$color3: #3aafa9;
-$color4: #def2f1;
-$color5: #feffff;
+$color2: #5f6366;
+$color3: #99ced3;
+$color4: #b4dfe5;
+$color5: #d2fdff;
 
 .App {
   text-align: center;
 }
 
+
+.active-page{
+  a{
+    background: $color3;
+  }
+}

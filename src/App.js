@@ -10,16 +10,14 @@ function App() {
   const location = useLocation();
   return (
     <div className="App">
-      <Layout>
         <TransitionGroup>
           <CSSTransition timeout={500} classNames='transition' key={location.key}>
             <Routes location={location}>
               <Route exact path='/' element={<Home />} />
-              <Route exact path='/projects' element={<Projects />} />
+              <Route path='/projects' element={<Projects />} />
             </Routes>
           </CSSTransition>
         </TransitionGroup> 
-      </Layout>
     </div>
   );
 }
