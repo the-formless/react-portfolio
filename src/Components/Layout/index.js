@@ -10,7 +10,7 @@ function Layout(props) {
     <div className='layout'>
       <nav>
         <div className='profile-picture'>
-          <Link to={'/'}><img src={pic} alt="Vandit Narain Tyagi" /><p>vandit.xyz</p></Link>
+          <Link to={'/'}><img src={pic} alt="Vandit Narain Tyagi" /><p>Vandit Narain Tyagi</p></Link>
           
         </div>
           <div className='links'>

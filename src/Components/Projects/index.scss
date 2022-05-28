@@ -7,8 +7,8 @@ $color5: #d2fdff;
 @media only screen and (min-width: 768px) {
 .project:hover {
   border: 0.22rem solid $color1;
-  margin-top: -3rem;
-  margin-bottom: 3rem;
+  margin-top: -1.5rem;
+  margin-bottom: 1.5rem;
 }
 }
 .project{
@@ -26,7 +26,7 @@ $color5: #d2fdff;
   margin-bottom: 0;
   transition-property: border, margin-bottom, margin-top;
   transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
   box-sizing: border-box;
 
   img {
@@ -108,6 +108,5 @@ $color5: #d2fdff;
     max-width: 80vw;
     transition-property: border;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.5s;
   }
 }

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import 'react-notifications/lib/notifications.css';
+
+$color1: #17252a;
+$color2: #5f6366;
+$color3: #99ced3;
+$color4: #b4dfe5;
+$color5: #d2fdff;
+
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  h1{
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  form{
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    label{
+      margin-top: 1.11rem;
+      font-size: large;
+      text-align: left;
+    }
+    input{
+      border: 0.22rem solid $color1;
+      padding: 3% 6%;
+      font-size: large;
+      margin-top: 3%;
+      color: $color1;
+      background: #e3feff;
+    }
+
+    textarea{
+      height: 11rem;
+      padding: 3% 6%;
+      font-size: x-large;
+      margin-top: 3%;
+      border: 0.22rem solid $color1;
+      color: $color1;
+      background: #e3feff;
+    }
+
+    #send{
+      font-family: 'Comfortaa';
+      background: $color3;
+      font-size: xx-large;
+    }
+    #send:hover {
+      background: $color1;
+      color: $color5;
+    }
+  }
+}
