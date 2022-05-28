@@ -1,9 +1,3 @@
-$color1: #17252a;
-$color2: #5f6366;
-$color3: #99ced3;
-$color4: #b4dfe5;
-$color5: #d2fdff;
-
 .about-page{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 0.05fr;
@@ -16,6 +10,6 @@ $color5: #d2fdff;
 .about-img{
   grid-column: 3/4;
   img{
-    max-width: 95%;
+    width: 100%;
   }
 }

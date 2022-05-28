@@ -6,8 +6,8 @@ $color5: #d2fdff;
 
 .project:hover {
   border: 0.22rem solid $color1;
-  margin-top: -1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
 }
 .project{
   font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +43,6 @@ $color5: #d2fdff;
     display: flex;
     margin: 0 auto;
     margin-top: auto;
-    padding-top: 2rem;
     font-size: medium;
     color: white;
     .technology {
@@ -91,7 +90,7 @@ $color5: #d2fdff;
 
 
 .description {
-  padding-top: 0;
+  padding-top: 3.3rem;
 }
 
 @media (max-width: 768px) {
