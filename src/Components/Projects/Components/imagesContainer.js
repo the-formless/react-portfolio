@@ -1,6 +1,7 @@
 import carouselStyles from './imageContainer.module.scss'
 import { useState } from 'react'
 import {BiLeftArrowAlt, BiRightArrowAlt} from 'react-icons/bi'
+import Image from './image';
 
 function Images({images, projectName}) {
 
@@ -29,8 +30,8 @@ function Images({images, projectName}) {
 
   return (
     <div className={carouselStyles['image-container']}>
-      <img src={image} className={carouselStyles['image']} alt={projectName}/>
-      
+      {/* <img src={image} className={carouselStyles['image']} alt={projectName}/> */}
+      <Image img={image} classCss={carouselStyles['image']} alt={projectName} />
       {images.length > 1 && <div className={carouselStyles['sliderBtns']}>
         <BiLeftArrowAlt className={carouselStyles['prev']} onClick={()=>slide(true)}/>
         <BiRightArrowAlt className={carouselStyles['prev'] + ' ' + carouselStyles['next']} onClick={()=>slide(false)}/>

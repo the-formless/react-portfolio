@@ -9,27 +9,38 @@ $color5: #d2fdff;
 body {
   margin: 0;
   font-family: 'Comfortaa', 'Monospace';
-  background: $color3;
+  background: $color5;
 }
 
 
-.app-content {
-  flex: 1;
-  display: flex;
-  overflow: auto;
-  min-width: 100vh;
-  background: #d2fdff;
-  justify-self: stretch;
-  align-self: stretch;
-  align-items: center;
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  
+  .app-content {
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    min-width: 100vh;
+    background: #d2fdff;
+    justify-self: stretch;
+    align-self: stretch;
+    align-items: center;
+  }
 }
- @media (max-width: 768px){
-   .app-content{
-     flex-direction: column;
-     min-width: fit-content;
-     align-items: center;
-   }
- }
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .app-content{
+    flex-direction: column;
+    min-width: fit-content;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+}
+
 .transition-enter {
   opacity: 0;
   z-index: 1;
