@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Gothic+Coding&display=swap');
 $color1: #17252a;
 $color2: #5f6366;
 $color3: #99ced3;
@@ -6,24 +8,94 @@ $color5: #d2fdff;
 
 .home-page {
   display: flex;
-  color: $color5;
-  background: $color3;
+  color: $color1;
   grid-column: 1/4;
   grid-row: 1/6;
   align-self: center;
-}
+  font-family: 'Nanum Gothic Coding';
+  font-size: xx-large;
 
-h1 {
-  margin: 0 0.5rem;
-}
-@media only screen and (min-width: 768px) {
-  /* tablets and desktop */
+  .intro{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 3rem;
+    p{
+      font-size: medium;
+      margin-bottom: 0;
+    }
+    h1{
+      font-family: 'Abril Fatface';
+      margin: 0 0 0 0.11rem;
+    }
+    h5{
+      margin: 0 0 0 0.11rem;
+    }
+  }
+
+  .cta-icon{
+    margin: auto 0 auto auto;
+    color: $color2;
+    animation-name: floater;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  a{
+    text-decoration: none;
+    color: $color1;
+    margin: auto auto auto 2rem;
+    font-family: 'Comfortaa';
+    font-size: x-large;
+    border: 0.22rem solid $color1;
+    padding: 0.5rem;
+  }
+  a:hover{
+    background: $color1;
+    color: $color5;
+  }
+  @keyframes floater {
+    0%{
+      transform: translateX(0rem);
+    }
+    50%{
+      transform: translateX(1rem);
+    }
+    100%{
+      transform: translateX(0rem);
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
   /* phones */
-}
+  .home-page{
+    flex-direction: column;
+    .intro{
+      margin-top: 3rem;
+      margin-left: 2rem;
+    }
+    .cta-icon{
+      margin: 0 auto;
+      margin-top: 2.2rem;
+      svg{
+        transform: rotateZ(90deg);
+      }
+    }
+    a{
+      margin-top: 1rem;
+      margin-left: auto;
+    }
+    @keyframes floater {
+      0%{
+        transform: translateY(0rem);
+      }
+      50%{
+        transform: translateY(-1rem);
+      }
+      100%{
+        transform: translateY(0rem);
+      }
+    }
 
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-  /* portrait phones */
+  }
 }

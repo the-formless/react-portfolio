@@ -1,15 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Gothic+Coding&display=swap');
+
+$color1: #17252a;
+$color2: #5f6366;
+$color3: #99ced3;
+$color4: #b4dfe5;
+$color5: #d2fdff;
+
 .about-page{
   display: grid;
+  max-height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 0.05fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
   column-gap: 2rem;
+  font-size: large;
 }
 
 .about-content{
   grid-column: 1/3;
+  grid-row: 2/6;
+  p{
+    font-family: 'Nanum Gothic';
+    text-align: justify;
+    margin: 2rem 6rem 0 6rem;
+  }
+}
+.contact-link{
+  grid-column: 1/3;
+  grid-row: 6/7;
+  text-decoration: none;
+  color: $color1;
+  font-family: 'Comfortaa';
+  font-size: large;
+  border: 0.22rem solid $color1;
+  margin: auto auto;
+  padding: 0.5rem;
+}
+.contact-link:hover{
+  background: $color1;
+  color: $color5;
 }
 .about-img{
   grid-column: 3/4;
+  grid-row: 2/6;
   img{
     width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-page{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content{
+    p{
+      text-align: justify;
+      margin: 1rem 2rem 0 2rem;
+    }
+  }
+  
+  .contact-link{
+    margin-top: 1.5rem;
+  }
+  .contact-link:hover{
+    background: $color1;
+    color: $color5;
+  }
+  .about-img{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 }

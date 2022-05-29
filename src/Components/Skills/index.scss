@@ -35,10 +35,29 @@
 
 @media (max-width: 768px){
   .skills-page {
+    margin: 2rem auto;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    h2{
+      font-size: large;
+    }
   }
   .skill{
     img{
+      max-width: 125px;
+      max-height: 125px;
+    }
+  }
+  @keyframes hovering{
+    0%{
+      max-width: 125px;
+      max-height: 125px;
+    }
+    50%{
+      max-width: 100px;
+      max-height: 100px;
+    }
+    100%{
       max-width: 125px;
       max-height: 125px;
     }

@@ -5,7 +5,7 @@ import css from './assets/css.png'
 import firebase from './assets/firebase.png'
 import sass from './assets/sass.png'
 import js from './assets/js.png'
-import photoshop from './assets/photoshop.png'
+import git from './assets/git_logo.png'
 import unity from './assets/unity.png'
 
 export const skillsData = [
@@ -42,7 +42,7 @@ export const skillsData = [
     image: csharp
   },
   {
-    title: "Adobe Photoshop",
-    image: photoshop
+    title: "Git",
+    image: git
   }
 ];
