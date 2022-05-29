@@ -5,7 +5,7 @@ $color4: #b4dfe5;
 $color5: #d2fdff;
 
 .curtain{
-  background: $color3;
+  background: $color1;
   position: absolute;
   bottom: 0%;
   width: 100%;
@@ -14,22 +14,22 @@ $color5: #d2fdff;
   z-index: 2;
   animation-name: curtain-lift;
   animation-delay: 99ms;
-  animation-duration: 369ms;
+  animation-duration: 432ms;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  animation-timing-function: linear;
 }
 @keyframes curtain-lift {
   0%{
     bottom: 0%;
   }
   25%{
-    bottom: 33%;
+    bottom: 44%;
   }
   50%{
-    bottom: 66%;
+    bottom: 69%;
   }
   75%{
-    bottom: 88%;
+    bottom: 92%;
   }
   100%{
     bottom: 100%;

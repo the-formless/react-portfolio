@@ -66,8 +66,16 @@ $color5: #d2fdff;
       transform: translateX(0rem) scale(200%);;
     }
   }
+  animation-name: enter;
+  animation-duration: 333ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
-
+@keyframes enter {
+  0%{ opacity: 0;}
+  50%{ opacity: 0.5;}
+  100%{ opacity: 1;}
+}
 @media only screen and (max-width: 767px) {
   /* phones */
   .home-page{

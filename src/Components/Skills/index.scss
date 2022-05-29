@@ -3,9 +3,16 @@
   width: 72vw;
   max-height: 88vh;
   grid-template-columns: 1fr 1fr 1fr;
-  
+  animation-name: enter;
+  animation-duration: 333ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
-
+@keyframes enter {
+  0%{ opacity: 0;}
+  50%{ opacity: 0.5;}
+  100%{ opacity: 1;}
+}
 .skill {
   img{
     max-width: 200px;

@@ -14,6 +14,15 @@ $color5: #d2fdff;
   grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
   column-gap: 2rem;
   font-size: large;
+  animation-name: enter;
+  animation-duration: 333ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes enter {
+  0%{ opacity: 0;}
+  50%{ opacity: 0.5;}
+  100%{ opacity: 1;}
 }
 .about-text{
   margin-top: 11%;
@@ -71,7 +80,9 @@ $color5: #d2fdff;
   .about-img{
     width: 75%;
     margin: 0 auto;
-    margin-top: 2rem;
+    img{
+      margin: 1rem 0;
+    }
   }
 }
 @media only screen and (max-height: 800px) {
