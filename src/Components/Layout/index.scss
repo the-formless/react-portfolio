@@ -4,6 +4,37 @@ $color3: #99ced3;
 $color4: #b4dfe5;
 $color5: #d2fdff;
 
+.curtain{
+  background: $color3;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+  animation-name: curtain-lift;
+  animation-delay: 99ms;
+  animation-duration: 369ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes curtain-lift {
+  0%{
+    bottom: 0%;
+  }
+  25%{
+    bottom: 33%;
+  }
+  50%{
+    bottom: 66%;
+  }
+  75%{
+    bottom: 88%;
+  }
+  100%{
+    bottom: 100%;
+  }
+}
 .layout {
   display: flex;
   max-height: 100vh;

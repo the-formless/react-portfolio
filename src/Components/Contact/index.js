@@ -7,10 +7,12 @@ function Contact() {
 
   const createNotification = (type) => {
       switch (type) {
+        case 'warning':
+          return NotificationManager.warning('Please enter all the details', 'Incomplete', 1551)
         case 'success':
-          return NotificationManager.success('Sent Successfully', 'Email ');
+          return NotificationManager.success('Sent Successfully', 'Email ', 1551);
         case 'error':
-          return NotificationManager.error('Unable To send email', 'error');
+          return NotificationManager.error('Unable To send email', 'error', 1551);
         default:
           return null;
       }
@@ -20,7 +22,12 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    for(let i = 0; i < 3; i++){
+      if(form.current[i].value === ''){
+        createNotification('warning')
+        return null;
+      }
+    }
     emailjs.sendForm('service_3sxmapj', 'contact_form', form.current, 'ohLyWXLS2AKYrHlEF')
       .then((result) => {
           createNotification('success');

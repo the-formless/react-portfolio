@@ -14,8 +14,6 @@ $color5: #d2fdff;
 }
 
 .image {
-  //position: relative;
-  //bottom: -1.1rem;
   height: auto;
 }
 .image-buttons{
@@ -63,4 +61,35 @@ $color5: #d2fdff;
 }
 .radio:hover {
   border: 0.11rem solid $color2;
+}
+
+@media only screen and (max-height: 800px) {
+  
+  .image-container{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .prev {
+    position: relative;
+    width: 1.75rem;
+    height: 1.75rem;
+    transform: translateY(-7rem);
+  }
+  .prev:hover{
+    border: 0.11rem solid $color2;
+  }
+  
+  .radio {
+    position: relative;
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .radio.active{
+    border: 0.11rem solid $color5;
+    background: $color2;
+  }
+  .radio:hover {
+    border: 0.06rem solid $color2;
+  }
+
 }

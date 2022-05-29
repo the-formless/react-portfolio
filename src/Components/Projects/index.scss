@@ -11,6 +11,7 @@ $color5: #d2fdff;
   margin-bottom: 1.5rem;
 }
 }
+
 .project{
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -18,7 +19,6 @@ $color5: #d2fdff;
   background: #99ced3;
   color: $color1;
   border: 0rem solid $color1;
-  border-radius: 0;
   padding: 1rem 1rem;
   max-width: 444px;
   min-width: 350px;
@@ -39,13 +39,13 @@ $color5: #d2fdff;
   p{
     text-align: justify;
     margin-top: 2rem;
-    font-size: medium;
+    font-size: 1rem;
   }
   .technologies {
     display: flex;
     margin: 0 auto;
     margin-top: auto;
-    font-size: medium;
+    font-size: 1rem;
     color: white;
     .technology {
       display: flex;
@@ -109,4 +109,52 @@ $color5: #d2fdff;
     transition-property: border;
     transition-timing-function: ease-in-out;
   }
+}
+
+@media only screen and (max-height: 800px) {
+  .project:hover {
+    border: 0.2rem solid $color1;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .projects{
+    max-height: 750px;
+  }
+  .project {
+    margin-top: 1rem;
+    padding: 0.7rem 0.7rem;
+    h3{
+      font-size: 0.7rem;
+    }
+    max-width: 275px;
+    min-width: 250px;
+    img{
+      max-width: 100%;
+    }
+    p{
+      font-size: 0.6rem;
+      margin-top: 0.4rem;
+    }
+    .technologies{
+      .technology{
+        padding: 0 0.1rem;
+        h1{
+          font-size: 1.35rem;
+        }
+        p{
+          font-size: 0.54rem;
+        }
+      }
+    }
+    .project-links{
+      a{
+        font-size: 0.6rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+  }
+  
+.description {
+  padding-top: 1rem;
+}
 }

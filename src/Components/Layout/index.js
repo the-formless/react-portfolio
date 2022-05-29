@@ -8,6 +8,7 @@ function Layout(props) {
   const location = useLocation();
   return (
     <div className='layout'>
+      <div className='curtain'></div>
       <nav>
         <div className='profile-picture'>
           <Link to={'/'}><img src={pic} alt="Vandit Narain Tyagi" /><p>Vandit Narain Tyagi</p></Link>

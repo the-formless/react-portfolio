@@ -12,8 +12,8 @@ $color5: #d2fdff;
   grid-column: 1/4;
   grid-row: 1/6;
   align-self: center;
-  font-family: 'Nanum Gothic Coding';
-  font-size: xx-large;
+  font-family: 'Comfortaa';//'Nanum Gothic Coding';
+  //font-size: xx-large;
 
   .intro{
     display: flex;
@@ -21,20 +21,22 @@ $color5: #d2fdff;
     text-align: left;
     margin-left: 3rem;
     p{
-      font-size: medium;
-      margin-bottom: 0;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
     h1{
-      font-family: 'Abril Fatface';
+      font-family: 'Comfortaa';//'Abril Fatface';
       margin: 0 0 0 0.11rem;
+      font-size: 9rem;
     }
     h5{
-      margin: 0 0 0 0.11rem;
+      margin: 0 0 0.5rem 0.11rem;
+      font-size: 3rem;
     }
   }
 
   .cta-icon{
-    margin: auto 0 auto auto;
+    margin: auto 1rem auto auto;
     color: $color2;
     animation-name: floater;
     animation-duration: 1s;
@@ -45,7 +47,7 @@ $color5: #d2fdff;
     color: $color1;
     margin: auto auto auto 2rem;
     font-family: 'Comfortaa';
-    font-size: x-large;
+    font-size: 3rem;
     border: 0.22rem solid $color1;
     padding: 0.5rem;
   }
@@ -55,13 +57,13 @@ $color5: #d2fdff;
   }
   @keyframes floater {
     0%{
-      transform: translateX(0rem);
+      transform: translateX(0rem) scale(200%);;
     }
     50%{
-      transform: translateX(1rem);
+      transform: translateX(1rem) scale(200%);;
     }
     100%{
-      transform: translateX(0rem);
+      transform: translateX(0rem) scale(200%);;
     }
   }
 }
@@ -73,17 +75,31 @@ $color5: #d2fdff;
     .intro{
       margin-top: 3rem;
       margin-left: 2rem;
+    p{
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    h1{
+      font-family: 'Comfortaa';//'Abril Fatface';
+      margin: 0 0 0 0.11rem;
+      font-size: 6.3rem;
+    }
+    h5{
+      margin: 0 0 0.5rem 0.11rem;
+      font-size: 2rem;
+    }
     }
     .cta-icon{
       margin: 0 auto;
-      margin-top: 2.2rem;
+      margin-top: 4.4rem;
       svg{
-        transform: rotateZ(90deg);
+        transform: rotateZ(90deg) scale(150%);
       }
     }
     a{
       margin-top: 1rem;
       margin-left: auto;
+      font-size: 2rem;
     }
     @keyframes floater {
       0%{
@@ -97,5 +113,29 @@ $color5: #d2fdff;
       }
     }
 
+  }
+}
+@media only screen and (max-height: 800px) {
+  .home-page{
+    .intro{
+      margin-left: 2.7rem;
+      p{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      h1{
+        font-size: 7.7rem;
+      }
+      h5{
+        font-size: 2.2rem;
+      }
+    }
+    .cta-icon{
+      margin: auto auto;
+    }
+    a{
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
   }
 }
