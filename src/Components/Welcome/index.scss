@@ -82,11 +82,11 @@ $color5: #d2fdff;
     h1{
       font-family: 'Comfortaa';//'Abril Fatface';
       margin: 0 0 0 0.11rem;
-      font-size: 6.3rem;
+      font-size: 5.5rem;
     }
     h5{
       margin: 0 0 0.5rem 0.11rem;
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
     }
     .cta-icon{
@@ -99,6 +99,7 @@ $color5: #d2fdff;
     a{
       margin-top: 1rem;
       margin-left: auto;
+      margin-bottom: 1rem;
       font-size: 2rem;
     }
     @keyframes floater {
@@ -115,27 +116,27 @@ $color5: #d2fdff;
 
   }
 }
-@media only screen and (max-height: 800px) {
-  .home-page{
-    .intro{
-      margin-left: 2.7rem;
-      p{
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
-      h1{
-        font-size: 7.7rem;
-      }
-      h5{
-        font-size: 2.2rem;
-      }
-    }
-    .cta-icon{
-      margin: auto auto;
-    }
-    a{
-      font-size: 2rem;
-      margin-right: 0.5rem;
-    }
-  }
-}
+// @media only screen and (max-height: 800px) {
+//   .home-page{
+//     .intro{
+//       margin-left: 2.7rem;
+//       p{
+//         font-size: 1.5rem;
+//         margin-bottom: 0.5rem;
+//       }
+//       h1{
+//         font-size: 7.7rem;
+//       }
+//       h5{
+//         font-size: 2.2rem;
+//       }
+//     }
+//     .cta-icon{
+//       margin: auto auto;
+//     }
+//     a{
+//       font-size: 2rem;
+//       margin-right: 0.5rem;
+//     }
+//   }
+// }

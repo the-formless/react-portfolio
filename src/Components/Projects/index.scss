@@ -5,11 +5,13 @@ $color4: #b4dfe5;
 $color5: #d2fdff;
 
 @media only screen and (min-width: 768px) {
-.project:hover {
-  border: 0.22rem solid $color1;
-  margin-top: -1.5rem;
-  margin-bottom: 1.5rem;
-}
+  @media only screen and (min-height: 768px) {
+  .project:hover {
+    border: 0.22rem solid $color1;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  }
 }
 
 .project{
@@ -95,6 +97,63 @@ $color5: #d2fdff;
   padding-top: 3.3rem;
 }
 
+@media only screen and (max-height: 768px) {
+  @media only screen and (min-width: 768px) {
+    .project:hover {
+      border: 0.2rem solid $color1;
+      transform: translateY(-20px);
+    }
+    .project{
+      min-height: 77vh;
+      max-height: 77vh;
+    }
+  }
+  .projects{
+    min-height: 100vh;
+  }
+  .project {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.7rem 0.7rem;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+    h3{
+      font-size: 1rem;
+    }
+    max-width: 275px;
+    min-width: 275px;
+    img{
+      max-width: 100%;
+    }
+    p{
+      font-size: 0.8rem;
+      margin-top: 0.6rem;
+    }
+    .technologies{
+      margin-top: auto;
+      .technology{
+        padding: 0.22rem;
+        h1{
+          font-size: 1.75rem;
+        }
+        p{
+          font-size: 0.77rem;
+        }
+      }
+    }
+    .project-links{
+      a{
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+      }
+    }
+  }
+  .description {
+    padding-top: 1rem;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .projects{
     flex-direction: column;
@@ -109,52 +168,4 @@ $color5: #d2fdff;
     transition-property: border;
     transition-timing-function: ease-in-out;
   }
-}
-
-@media only screen and (max-height: 800px) {
-  .project:hover {
-    border: 0.2rem solid $color1;
-    margin-top: -0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .projects{
-    max-height: 750px;
-  }
-  .project {
-    margin-top: 1rem;
-    padding: 0.7rem 0.7rem;
-    h3{
-      font-size: 0.7rem;
-    }
-    max-width: 275px;
-    min-width: 250px;
-    img{
-      max-width: 100%;
-    }
-    p{
-      font-size: 0.6rem;
-      margin-top: 0.4rem;
-    }
-    .technologies{
-      .technology{
-        padding: 0 0.1rem;
-        h1{
-          font-size: 1.35rem;
-        }
-        p{
-          font-size: 0.54rem;
-        }
-      }
-    }
-    .project-links{
-      a{
-        font-size: 0.6rem;
-        padding: 0.3rem 0.5rem;
-      }
-    }
-  }
-  
-.description {
-  padding-top: 1rem;
-}
 }
