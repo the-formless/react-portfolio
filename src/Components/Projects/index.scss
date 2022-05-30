@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 $color1: #17252a;
 $color2: #5f6366;
 $color3: #99ced3;
@@ -15,7 +17,7 @@ $color5: #d2fdff;
 }
 
 .project{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   background: #99ced3;
@@ -40,8 +42,16 @@ $color5: #d2fdff;
 
   p{
     text-align: justify;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1rem;
+    ul{
+      margin: 0;
+      padding: 0 auto;
+      li{
+        padding-top: 0.2rem;
+        list-style-type: circle;
+      }
+    }
   }
   .technologies {
     display: flex;
@@ -106,6 +116,15 @@ $color5: #d2fdff;
     .project{
       min-height: 77vh;
       max-height: 77vh;
+      p{
+        ul{
+          margin: 0;
+          padding: 0 auto;
+          li{
+            padding-top: 0.1rem;
+          }
+        }
+      }
     }
   }
   .projects{

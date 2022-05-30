@@ -7,7 +7,7 @@ function ProjectCard({valObj}) {
       <h3>{valObj.title}</h3>
       {/* <img src={valObj.img} alt={valObj.title} /> */}
       <Images images={valObj.images} projectName={valObj.title}/>
-      <p className='description'>{valObj.description}</p>
+      <p className='description'><ul>{valObj.description.map((v, i)=> <li key={i}>{v}</li>)}</ul></p>
       <div className='technologies'>
         {valObj.technologies.map((v, i)=> 
           <div className='technology' key={i}>
