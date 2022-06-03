@@ -56,7 +56,7 @@ const tech = {
   images: [portfolio1, portfolio2],
   link: '',
   github: 'https://github.com/the-formless/react-portfolio',
-  description: ['A SPA built with React Native','Implements emailjs API', 'Styling with SASS', 'Responsive'],
+  description: ['A SPA built with React','Implements emailjs API', 'Styling with SASS', 'Responsive'],
   technologies: [tech.react, tech.js, tech.html, tech.sass],
   blog: '' 
   },

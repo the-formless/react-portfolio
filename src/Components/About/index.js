@@ -10,7 +10,7 @@ function About() {
         <h1>Welcome to my story</h1>
         <div className='about-text'>
           <p>
-            I come from India. My passion for developing software started at a very early age. Video games fascinated me and I was curious how does it all go together behind the screen. It was the interactivity, that games provided, which hooked me.
+            I come from India. My passion for developing software started at a very early age. Video games fascinated me and I was curious about how it all goes together behind the screen. It was the interactivity that games provided which hooked me.
           </p>
           <p>
             Now I build all sorts of interactive media. My current tech stack includes React and Javascript. My pre-current tech stack had Unity and C# in it. Even before that, I freelanced by building Android applications in Java.
@@ -19,7 +19,7 @@ function About() {
             Currently, I'm based in my wife's hometown in Germany. And I'm looking for a <em>Frontend Developer</em> role.
           </p>
           <p>
-            With emotional intelligence and the ability to reflect on myself, I'll be a very good addition to your team! If I have peaked your interest, send me a message:
+            With emotional intelligence and the ability to reflect on myself, I'll be a very good addition to your team! If I have piqued your interest, send me a message:
           </p>
         </div>
         </div>

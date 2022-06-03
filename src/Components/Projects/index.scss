@@ -114,16 +114,19 @@ $color5: #d2fdff;
       transform: translateY(-20px);
     }
     .project{
-      min-height: 77vh;
-      max-height: 77vh;
+      min-height: 84vh;
+      max-height: fit-content;
       p{
         ul{
           margin: 0;
           padding: 0 auto;
           li{
-            padding-top: 0.1rem;
+            padding-top: 0rem;
           }
         }
+      }
+      .technologies{
+        font-size: 0.77rem;
       }
     }
   }

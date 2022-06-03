@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.scss'
-import pic from '../../assets/CV.png'
+import pic from '../../assets/profile.png'
 import { Link, useLocation } from 'react-router-dom'
 import {BsGithub, BsLinkedin} from 'react-icons/bs'
 
