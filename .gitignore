@@ -24,3 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /public/.cpanel.yml
+
+/README.md
