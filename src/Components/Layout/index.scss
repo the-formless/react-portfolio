@@ -1,8 +1,8 @@
-$color1: #17252a;
-$color2: #5f6366;
-$color3: #99ced3;
-$color4: #b4dfe5;
-$color5: #d2fdff;
+$color1: #2E0249;
+$color2: #247881;
+$color3: #14C38E;
+$color4: #FF008E;
+$color5: #000000;
 
 .curtain{
   background: $color1;
@@ -35,7 +35,7 @@ $color5: #d2fdff;
   margin-top: 1rem;
   background-color: $color1;
   p{
-    color: $color5;
+    color: $color3;
   }
   a{
     background-color: $color1;
@@ -51,7 +51,7 @@ nav {
   width: 22%;
   height: 100vh;
   justify-items: center;
-  color: $color2;
+  color: $color3;
   text-align: center;
 
   img {
@@ -64,13 +64,13 @@ nav {
   a {
     font-size: 1.1rem;
     display: block;
-    background: $color4;
-    color: $color1;
+    background: $color5;
+    color: $color3;
     text-decoration: none;
     padding: 0.7rem 0;
   }
   a:hover {
-    background: $color5;
+    background: $color2;
   }
   .a-active {
     background: $color3;
@@ -80,7 +80,7 @@ nav {
     margin: auto auto 0.33rem auto;
     a {
       font-size: 2rem;
-      color: $color5;
+      color: $color3;
       background: transparent;
       padding: 0.3rem 0.3rem;
       margin: 0 0.33rem;
