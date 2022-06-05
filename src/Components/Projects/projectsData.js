@@ -35,7 +35,7 @@ const tech = {
   },
   sass: {
     icon: <FaSass/>,
-    text: 'Sass'
+    text: 'SASS'
   },
   js: {
     icon: <FaJs/>,

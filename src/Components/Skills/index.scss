@@ -1,7 +1,7 @@
 .skills-page {
   display: grid;
   width: 72vw;
-  max-height: 88vh;
+  max-height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
   animation-name: enter;
   animation-duration: 333ms;
@@ -15,8 +15,8 @@
 }
 .skill {
   img{
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
   }
   img:hover{
     animation-name: hovering;
@@ -26,16 +26,16 @@
   }
   @keyframes hovering{
     0%{
-      max-width: 200px;
-      max-height: 200px;
+      max-width: 150px;
+      max-height: 150px;
     }
     50%{
-      max-width: 175px;
-      max-height: 175px;
+      max-width: 125px;
+      max-height: 125px;
     }
     100%{
-      max-width: 200px;
-      max-height: 200px;
+      max-width: 150px;
+      max-height: 150px;
     }
   }
 }

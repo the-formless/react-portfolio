@@ -32,7 +32,7 @@ $color5: #d2fdff;
   p{
     font-family: 'Nanum Gothic';
     text-align: justify;
-    margin: 2rem 6rem 0 6rem;
+    margin: 2rem 6rem 1rem 6rem;
   }
 }
 .contact-link{
@@ -53,6 +53,7 @@ $color5: #d2fdff;
 .about-img{
   grid-column: 3/4;
   grid-row: 2/6;
+  margin: auto;
   img{
     width: 100%;
   }

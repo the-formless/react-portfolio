@@ -1,12 +1,12 @@
-import react from './assets/react.png'
-import html from './assets/html.png'
-import csharp from './assets/csharp.png'
-import css from './assets/css.png'
-import firebase from './assets/firebase.png'
+import react from './assets/react.webp'
+import html from './assets/html.webp'
+import csharp from './assets/csharp.webp'
+import css from './assets/css.webp'
+import firebase from './assets/firebase.webp'
 import sass from './assets/sass.png'
-import js from './assets/js.png'
+import js from './assets/js.webp'
 import git from './assets/git_logo.png'
-import unity from './assets/unity.png'
+import unity from './assets/unity.webp'
 
 export const skillsData = [
   {

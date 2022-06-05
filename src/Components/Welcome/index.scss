@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> new-version
 $color1: #17252a;
 $color2: #5f6366;
 $color3: #99ced3;
@@ -11,7 +15,10 @@ $color5: #d2fdff;
   grid-row: 1/6;
   align-self: center;
   font-family: 'Comfortaa';
+<<<<<<< HEAD
   //font-size: xx-large;
+=======
+>>>>>>> new-version
 
   .intro{
     display: flex;
@@ -23,7 +30,11 @@ $color5: #d2fdff;
       margin-bottom: 1rem;
     }
     h1{
+<<<<<<< HEAD
       font-family: 'Comfortaa';;
+=======
+      font-family: 'Comfortaa';
+>>>>>>> new-version
       margin: 0 0 0 0.11rem;
       font-size: 9rem;
     }
@@ -55,13 +66,13 @@ $color5: #d2fdff;
   }
   @keyframes floater {
     0%{
-      transform: translateX(0rem) scale(200%);;
+      transform: translateX(0rem) scale(200%);
     }
     50%{
-      transform: translateX(1rem) scale(200%);;
+      transform: translateX(1rem) scale(200%);
     }
     100%{
-      transform: translateX(0rem) scale(200%);;
+      transform: translateX(0rem) scale(200%);
     }
   }
   animation-name: enter;
@@ -106,6 +117,7 @@ $color5: #d2fdff;
       margin-top: 1rem;
       margin-left: auto;
       margin-bottom: 1rem;
+
       font-size: 2rem;
     }
     @keyframes floater {
@@ -122,27 +134,26 @@ $color5: #d2fdff;
 
   }
 }
-// @media only screen and (max-height: 800px) {
-//   .home-page{
-//     .intro{
-//       margin-left: 2.7rem;
-//       p{
-//         font-size: 1.5rem;
-//         margin-bottom: 0.5rem;
-//       }
-//       h1{
-//         font-size: 7.7rem;
-//       }
-//       h5{
-//         font-size: 2.2rem;
-//       }
-//     }
-//     .cta-icon{
-//       margin: auto auto;
-//     }
-//     a{
-//       font-size: 2rem;
-//       margin-right: 0.5rem;
-//     }
-//   }
-// }
+@media only screen and (max-height: 768px) {
+  @media only screen and (min-width: 768px) {
+    .home-page{
+      .intro{
+        margin-left: 2.7rem;
+        p{
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+        }
+        h1{
+          font-size: 7.2rem;
+        }
+        h5{
+          font-size: 2.2rem;
+        }
+      }
+      a{
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}
