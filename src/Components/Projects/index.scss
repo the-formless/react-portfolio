@@ -32,7 +32,9 @@ $color5: #d2fdff;
   transition-timing-function: ease-in-out;
   transition-duration: 0.25s;
   box-sizing: border-box;
-
+  h3{
+    font-family: 'Comfortaa';
+  }
   img {
     max-width: 100%;
     height: auto;
@@ -42,7 +44,8 @@ $color5: #d2fdff;
 
   p{
     text-align: justify;
-    margin-top: 1rem;
+    margin-top: 0rem;
+    padding-top: 1rem;
     font-size: 1rem;
     ul{
       margin: 0;
@@ -64,10 +67,14 @@ $color5: #d2fdff;
       flex-direction: column;
       padding: 0 0.33rem;
       font-size: large;
+      h1{
+        margin-bottom: 0.11rem;
+      }
       p{
         font-size: large;
         text-align: center;
-        margin-top: auto;
+        margin-top: 0rem;
+        padding-top: 0rem;
       }
     }
   }
@@ -79,7 +86,8 @@ $color5: #d2fdff;
       margin: 0.3rem 0.3rem 0 0.3rem;
       padding: 0.6rem 1rem;
       background: $color4;
-      font-size: larger;
+      font-size: medium;
+      font-family: 'Comfortaa';
     }
     a:hover {
       background: $color1;
@@ -108,28 +116,7 @@ $color5: #d2fdff;
 }
 
 @media only screen and (max-height: 768px) {
-  @media only screen and (min-width: 768px) {
-    .project:hover {
-      border: 0.2rem solid $color1;
-      transform: translateY(-20px);
-    }
-    .project{
-      min-height: 84vh;
-      max-height: fit-content;
-      p{
-        ul{
-          margin: 0;
-          padding: 0 auto;
-          li{
-            padding-top: 0rem;
-          }
-        }
-      }
-      .technologies{
-        font-size: 0.77rem;
-      }
-    }
-  }
+  
   .projects{
     min-height: 100vh;
   }
@@ -173,6 +160,52 @@ $color5: #d2fdff;
   }
   .description {
     padding-top: 1rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .project:hover {
+      border: 0.2rem solid $color1;
+      transform: translateY(-11px);
+    }
+    .project{
+      min-height: fit-content;
+      max-height: fit-content;
+      padding: 0.2rem 0.2rem;
+      h3{
+        font-size: 0.8rem;
+      }
+      p{
+        margin-top: 0rem;
+        font-size: 0.8rem;
+        min-height: 7rem;
+        margin-bottom: 0;
+        ul{
+          margin: 0 0.7rem;
+          padding: 0 auto;
+          li{
+            padding-top: 0rem;
+          }
+        }
+      }
+      .technologies{
+        font-size: 0.66rem;
+        margin-top: 0rem;
+        .technology{
+          padding-top: 0;
+        }
+        p{
+          min-height: fit-content;
+        }
+      }
+      
+  .project-links {
+    padding: 0.5rem;
+    a {
+      margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+      padding: 0.4rem 1rem;
+      font-size: 0.7rem;
+    }
+  }
+    }
   }
 }
 
