@@ -13,7 +13,7 @@ function About() {
             I come from India. My passion for developing software started at a very early age. Video games fascinated me and I was curious about how it all goes together behind the screen. It was the interactivity that games provided which hooked me.
           </p>
           <p>
-            Now I build all sorts of interactive media. My current tech stack includes React and Javascript. My pre-current tech stack had Unity and C# in it. Even before that, I freelanced by building Android applications in Java.
+            Now I build all sorts of interactive media. My current tech stack includes React and Javascript. Previously, I've used Unity and C# to develop and publish mobile as well as WebGL games. Even before that, I freelanced by building Android applications in Java.
           </p>
           <p>
             Currently, I'm based in Germany and I'm looking for a <em>Frontend Developer</em> role.
