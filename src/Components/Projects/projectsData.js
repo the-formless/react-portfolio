@@ -61,6 +61,15 @@ const tech = {
   blog: '' 
   },
   {
+    title: 'Airlift (Mobile Game)',
+    images: [airlift1, airlift2, airlift3],
+    link: 'https://ticklinggenre.itch.io/airlift',
+    github: '',
+    description: ['A Mobile game developed with Unity and C#', 'Implements Google Play API', 'In-game achievements', 'Global player leaderboard'],
+    technologies: [tech.unity,  tech.csharp],
+    blog: '' 
+  },
+  {
     title: 'Realtime Multiplayer Chess',
     images: [chess1, chess3, chess2],
     link: 'https://moonlit-fox-037c4a.netlify.app/',
@@ -76,15 +85,6 @@ const tech = {
     github: 'https://github.com/the-formless/ultimate-tic-tac-toe',
     description: ['A 2-player strategy game built with React and Javascript', 'Responsive'],
     technologies: [tech.react,  tech.js, tech.html, tech.css],
-    blog: '' 
-  },
-  {
-    title: 'Airlift (Mobile Game)',
-    images: [airlift1, airlift2, airlift3],
-    link: 'https://ticklinggenre.itch.io/airlift',
-    github: '',
-    description: ['A Mobile game developed with Unity and C#', 'Implements Google Play API', 'In-game achievements', 'Global player leaderboard'],
-    technologies: [tech.unity,  tech.csharp],
     blog: '' 
   },
   {
